@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link  rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/home-page.css">
+        <link rel="stylesheet" href="css/footer.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Bookshelf</title>
+    </head>
+    <body>
+
+        <div class="header">
+            <div>
+                <button class="menu-button" onclick="openMenu(this.id)" id="menu-off">
+                    <img src="icons/menu-icon.png" class="menu-icon">
+                </button>
+            </div>
+
+            <div class="title">Bookshelf</div>
+
+            <div class="search-section">
+                <input type="text" placeholder="search..." class="search-bar">
+                <button class="search-button">
+                    <img src="icons/search-icon.png" class="search-icon">
+                </button>
+            </div>
+        </div>
+        
+        <div class="menu-bar" id="menu-bar">
+            <button onclick="changePageTopic(this.id);" id="Home Page">
+                Home
+            </button>
+            <button onclick="changePageTopic(this.id);" id="Categories">
+                Categories
+            </button>
+            <button onclick="changePageTopic(this.id);" id="New Published">
+                New Published
+            </button>
+            <button onclick="changePageTopic(this.id);" id="Best Sellings">
+                Best Sellings
+            </button>
+            <button onclick="changePageTopic(this.id);" id="This month&#8216;s selections">
+                This month&#8216;s selections
+            </button>
+        </div>
+
+        <div class="page-box" id="page-box">
+
+            <div class="page-topic">
+                <p id="pageTopic">
+                    Home Page
+                </p>
+            </div>
+
+            <div class="bookshelf-grid">
+
+                <a href="book-page.html" target="_self">
+                    <div class="book-preview">
+                
+                        <div>
+                            <img class="book-cover" src="covers/anne-of-green-gables.jpg">
+                        </div>
+                    
+                        <div class="book-description">
+                    
+                            <div class="preview-title">
+                                <p class="book-name">
+                                    Anne Of Green Gables 1908
+                                </p>
+                    
+                                <p class="author">
+                                    L.M. Montgomerie
+                                </p>
+                            </div>
+                    
+                            <p class="summery">
+                                Anne Shirley, a young orphannity is sent to live with Cuthberts,
+                                unmarried siblings in their fifties and sixties, after a childhood spent in strangers' homes and orphanages.
+                                cuthberts had decided to adopt a boy but Through a misunderstanding, the orphanage sends Anne instead.
+                            </p>
+                    
+                            <div class="tags">
+                                <a>#novel</a>
+                                <a>#adventure</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="book-page.html" target="_self">
+                    <div class="book-preview">
+                
+                        <div>
+                            <img class="book-cover" src="covers/blindness.jpg">
+                        </div>
+                    
+                        <div class="book-description">
+                    
+                            <div class="preview-title">
+                                <p class="book-name">
+                                    Blindness 2004
+                                </p>
+                    
+                                <p class="author">
+                                    José Saramago
+                                </p>
+                            </div>
+                    
+                            <p class="summery">
+                                the story of an unexplained mass epidemic of blindness afflicting nearly everyone in an unnamed city,
+                                and the social breakdown that swiftly follows. The novel follows the misfortune of a handful of
+                                unnamed characters who are among the first to be stricken with blindness
+                            </p>
+                    
+                            <div class="tags">
+                                <a>#novel</a>
+                                <a>#adventure</a>
+                                <a>#fiction</a>
+                                <a>#sociaty</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="book-page.html" target="_self">
+                    <div class="book-preview">
+                
+                        <div>
+                            <img class="book-cover" src="covers/it-ends-with-us.webp">
+                        </div>
+                    
+                        <div class="book-description">
+                    
+                            <div class="preview-title">
+                                <p class="book-name">
+                                    It Ends With Us 2016
+                                </p>
+                    
+                                <p class="author">
+                                    Colleen Hoover
+                                </p>
+                            </div>
+                    
+                            <p class="summery">
+                                Lily Bloom moves to Boston with hopes of opening a floral shop.
+                                Her father was abusive towards her mother, who kept the abuse a secret,
+                                leading Lily to resent both of them.
+                                She reads through her old childhood diaries and remembers her first love Atlas
+                                Corrigan, who left to join the military, but promised to return to her.
+                            </p>
+                    
+                            <div class="tags">
+                                <a>#novel</a>
+                                <a>#Romance</a>
+                            </div>
+                        </div>
+                </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contact-us">
+                <div class="top-contact">
+                    <img src="icons/call-icon.png" class="call-icon">
+                    <p>Contact us:</p>
+                </div>
+                <div class="bottom-contact">
+                    <p>+989217869455</p>
+                    <p>mohsenmahmudi79@gmail.com</p>
+                </div>    
+            </div>
+
+            <div class="right-footer">
+                <p>Bookshelf</p>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/bookshelf.js"></script>
+        <script type="text/javascript" src="js/buttons.js"></script>
+
+    </body>
+</html>

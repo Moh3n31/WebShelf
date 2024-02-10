@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 128, 0, 0.514);
+    height: 150px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0px 7px;
+}
+
+.top-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-contact>p {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bottom-contact {
+    padding-left: 30px;
+}
+
+.bottom-contact>p {
+    margin-top: 3px;
+}
+
+.right-footer {
+    font-weight: bold;
+    font-size: 30px;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link  rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link  rel="stylesheet" href="css/menu-bar.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/book-page.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        
+        <title>Anne Of Green Gables</title>
+    </head>
+    <body>
+
+        <div class="header">
+            <div>
+                <button class="menu-button" onclick="openMenu(this.id)" id="menu-off">
+                    <img src="icons/menu-icon.png" class="menu-icon">
+                </button>
+            </div>
+
+            <div class="title">Bookshelf</div>
+
+            <div class="search-section">
+                <input type="text" placeholder="search..." class="search-bar">
+                <button class="search-button">
+                    <img src="icons/search-icon.png" class="search-icon">
+                </button>
+            </div>
+        </div>
+        
+        <div class="menu-bar" id="menu-bar">
+            <button onclick="changePageTopic(this.id);" id="Home Page">
+                Home
+            </button>
+            <button onclick="changePageTopic(this.id);" id="Categories">
+                Categories
+            </button>
+            <button onclick="changePageTopic(this.id);" id="New Published">
+                New Published
+            </button>
+            <button onclick="changePageTopic(this.id);" id="Best Sellings">
+                Best Sellings
+            </button>
+            <button onclick="changePageTopic(this.id);" id="This month&#8216;s selections">
+                This month&#8216;s selections
+            </button>
+        </div>
+
+        <div class="page-box" id="page-box">
+            <div class="top-info">
+
+                <div>
+                    <img src="covers/anne-of-green-gables.jpg" class="book-cover">
+                </div>
+    
+                <div class="short-info">
+    
+                    <div class="book-info">
+                        
+                        <div class="names">
+                            <p class="book-name">Anne Of Green Grables</p>
+                            <p class="publish-year">1981</p>
+                            <p class="author-name">by L.M. Montgomery</p>
+                        </div>
+                    
+                    </div>
+    
+                    <div class="rates">
+    
+                        <div class="total-rate">
+                            <img src="icons/star-icon.png" class="total-rate-icon">
+                            <p>4.8</p>
+                        </div>
+    
+                        <div class="rating">
+    
+                        </div>
+                    
+                    </div>
+    
+                    <div class="book-price-section">
+    
+                        <div class="price">
+                            <div class="dollar-sign">&#36;</div>
+                            <div>
+                                <p class="discount-price" id="discount-price">5.99</p>
+                                <p class="full-price" id="full-price">6.25</p>
+                            </div>
+                        </div>
+    
+                        <div class="purchase-section">
+    
+                            <div class="to-purchase" id="purchase-section">
+                                <button class="purchase-button" id="purchase-button"
+                                onclick="toPurchase()">
+                                Purchase
+                                </button>
+                            </div>
+    
+                            <div class="number-section" id="number-section">
+                                <button class="add-button" onclick="adjustNumber('+')">
+                                   + 
+                                </button>
+                                <p class="number-box" id="number-box">
+                                    1
+                                </p>
+                                <button class="remove-button" onclick="adjustNumber('-')">
+                                    -
+                                </button>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="bottom-info">
+    
+                <div class="parting-buttons">
+                    <button class="info-button" id="info-on"
+                    onclick="infoChanger(this.id, 1);">
+                        Summary
+                    </button>
+                    <button class="info-button" id="info-off"
+                    onclick="infoChanger(this.id, 2);">
+                        things
+                    </button>
+                </div>
+    
+                <div class="informations">
+    
+                    <div class="info-box" id="info-box-sum">
+                        <p>
+                            Anne Shirley, a young orphan from the fictional community of Bolingbroke,
+                            Nova Scotia, is sent to live with Marilla and Matthew Cuthbert,
+                            unmarried siblings in their fifties and sixties, after a childhood spent in strangers' 
+                            homes and orphanages. Marilla and Matthew had originally decided to adopt a boy from the orphanage
+                            to help Matthew run their farm at Green Gables, which is set in the fictional town of Avonlea.
+                            Through a misunderstanding, the orphanage sends Anne instead.
+                        </p>
+                        <p>
+                            Anne is fanciful, imaginative, eager to please, and dramatic. She is also adamant her name should always 
+                            be spelt with an "e" at the end. However, she is defensive about her appearance, despising her red hair, 
+                            freckles and pale, thin frame, but liking her nose.
+                            She is talkative, especially when it comes to describing her fantasies and dreams. 
+                            At first, stern Marilla says Anne must return to the orphanage, but after much observation and consideration, 
+                            along with kind, quiet Matthew's encouragement, Marilla decides to let her stay.
+                        </p>
+                    </div>
+    
+                    <div class="info-box" id="info-box-things">
+                        --smth--
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+
+            <div class="contact-us">
+
+                <div class="top-contact">
+                    <img src="icons/call-icon.png" class="call-icon">
+                    <p>Contact us:</p>
+                </div>
+
+                <div class="bottom-contact">
+                    <p>+989217869455</p>
+                    <p>mohsenmahmudi79@gmail.com</p>
+                </div>   
+
+            </div>
+
+            <div class="right-footer">
+                <p>Bookshelf</p>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="js/bookshelf.js"></script>
+        <script type="text/javascript" src="js/buttons.js"></script>
+    
+    </body>
+</html>
